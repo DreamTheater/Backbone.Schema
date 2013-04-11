@@ -1,3 +1,5 @@
+Hello!
+
 [lnk]: https://travis-ci.org/DreamTheater/Backbone.Schema
 [img]: https://secure.travis-ci.org/DreamTheater/Backbone.Schema.png
 
