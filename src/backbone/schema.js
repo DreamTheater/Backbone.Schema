@@ -53,6 +53,8 @@
                         value = value.source ? value.id : value.toJSON(options);
                     } else if (value instanceof Backbone.Collection) {
                         value = value.source ? _.pluck(value.models, 'id') : value.toJSON(options);
+                    } else if (!_.isUndefined(self.attributes[attribute].getter)){
+                        value = self.attributes[attribute].getter(attribute, value)
                     }
 
                     ////////////////////
